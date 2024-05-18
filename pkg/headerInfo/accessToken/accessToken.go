@@ -8,6 +8,7 @@ import (
 
 func getAPIKeyNames() []string {
 	apiKeyNameList, exists := os.LookupEnv("API_KEY_NAME_LIST")
+
 	if !exists {
 		return []string{"default_api_key"}
 	}
